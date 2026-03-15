@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TV PLUS — Premium digitalne pretplate</title>
+<meta name="description" content="TV PLUS — premium TV i digitalne pretplate. Netflix, Spotify, YouTube Premium, HBO Max, Disney+, Game Pass, Canva Pro i još mnogo toga. Cijena na upit." />
+<meta name="theme-color" content="#f6f8fc" />
+<style>
+:root{--bg:#f6f8fc;--bg2:#eef4ff;--card:#fff;--stroke:#d9e4f2;--text:#12233b;--muted:#62748c;--primary:#5c7cff;--primary2:#7b52ff;--shadow:0 20px 50px rgba(34,55,105,.10);--radius:24px;--max:1180px}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(900px 450px at 0% 0%, #e9f1ff 0%, transparent 58%),radial-gradient(900px 450px at 100% 10%, #f2eaff 0%, transparent 55%),linear-gradient(180deg,#f7f9fd 0%, #ffffff 100%);line-height:1.45}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:14px 14px 56px}
+.nav{position:sticky;top:0;z-index:30;margin-top:10px;border:1px solid rgba(217,228,242,.95);background:rgba(255,255,255,.84);backdrop-filter:blur(14px);border-radius:20px;box-shadow:0 10px 35px rgba(51,75,122,.08);padding:12px}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.logo-wrap{position:relative;width:48px;height:48px;flex:0 0 48px}
+.logo-bg{position:absolute;inset:0;border-radius:16px;background:linear-gradient(135deg,var(--primary),var(--primary2));box-shadow:0 12px 26px rgba(92,124,255,.28)}
+.logo-core{position:absolute;inset:3px;border-radius:13px;background:linear-gradient(180deg,#132238,#1f3558);border:1px solid rgba(255,255,255,.15);color:#fff;display:grid;place-items:center;font-weight:900;font-size:14px}
+.brandtext b{display:block;font-size:15px}.brandtext span{display:block;font-size:12px;color:var(--muted)}
+.navcta{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{min-height:44px;padding:10px 14px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:14px;border:1px solid var(--stroke);background:#fff;box-shadow:0 8px 20px rgba(48,73,128,.06)}
+.btn.soft{background:var(--bg2)} .btn.primary{color:#fff;border:0;background:linear-gradient(135deg,var(--primary),var(--primary2));box-shadow:0 14px 30px rgba(92,124,255,.28)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:16px;align-items:stretch}
+.card{background:rgba(255,255,255,.88);border:1px solid rgba(217,228,242,.95);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pad{padding:24px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#eef4ff;border:1px solid #dce7ff;color:#3855c8;font-size:12px;font-weight:900}
+h1{margin:14px 0 10px;font-size:clamp(34px,5vw,60px);line-height:1.02;letter-spacing:-1.4px}
+.sub{margin:0;max-width:640px;color:var(--muted);font-size:17px;line-height:1.65}
+.hero-actions,.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.chip{padding:10px 12px;border-radius:999px;border:1px solid var(--stroke);background:#fff;color:#314866;font-size:13px;font-weight:800}
+.preview{background:linear-gradient(180deg,#ffffff 0%, #eef4ff 100%);overflow:hidden}
+.stage{min-height:100%;display:flex;align-items:center;justify-content:center;position:relative}
+.screen-box{width:min(100%,460px);border-radius:28px;background:#132238;padding:10px;box-shadow:0 28px 60px rgba(18,34,59,.22)}
+.screen{border-radius:22px;padding:18px;min-height:420px;color:#fff;background:radial-gradient(circle at 18% 18%, rgba(23,195,178,.40), transparent 18%),radial-gradient(circle at 84% 20%, rgba(123,82,255,.42), transparent 20%),linear-gradient(135deg,#1a2f4e,#132238 58%,#162741);display:flex;flex-direction:column;justify-content:space-between}
+.screen-top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.micro{padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.13);font-size:12px;font-weight:900}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.offer{aspect-ratio:1/.82;border-radius:16px;padding:10px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;font-weight:900}
+.offer small{font-size:11px;font-weight:700;opacity:.88}
+.netflix{background:linear-gradient(180deg,#181818,#b20710)} .spotify{background:linear-gradient(180deg,#1d1d1d,#1ed760)} .youtube{background:linear-gradient(180deg,#251415,#ff2d2d)} .max{background:linear-gradient(180deg,#120d33,#7b52ff)} .gamepass{background:linear-gradient(180deg,#0e2614,#3aaa35)} .canva{background:linear-gradient(180deg,#13333c,#00c4cc)}
+.phone{position:absolute;right:2%;bottom:3%;width:118px;aspect-ratio:9/19.5;border-radius:24px;background:#132238;padding:6px;box-shadow:0 22px 45px rgba(18,34,59,.18);transform:rotate(-8deg)}
+.phone-screen{height:100%;border-radius:19px;background:linear-gradient(180deg,#ffffff,#eef4ff);padding:10px;display:flex;flex-direction:column;gap:8px}
+.line{height:10px;border-radius:999px;background:#d9e7fb}.w40{width:40%}.w65{width:65%}.w90{width:90%}
+.mini-card{height:58px;border-radius:14px;background:linear-gradient(135deg,#8db0ff,#6c54ff)} .mini-card:nth-child(2){background:linear-gradient(135deg,#64e0d0,#18b9b7)} .mini-card:nth-child(3){background:linear-gradient(135deg,#ffbb6d,#ff9062)}
+.section{margin-top:18px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.section-head h2{margin:0;font-size:25px}.section-head p{margin:0;color:var(--muted);font-size:14px}
+.plans,.pay-grid,.extras,.services{display:grid;gap:12px}
+.plans{grid-template-columns:repeat(5,1fr)} .pay-grid{grid-template-columns:repeat(4,1fr)} .extras{grid-template-columns:repeat(4,1fr)} .services{grid-template-columns:repeat(4,1fr)}
+.plan,.pay,.extra,.service{background:#fff;border:1px solid var(--stroke);border-radius:22px;padding:16px;box-shadow:0 10px 24px rgba(48,73,128,.06)}
+.plan-top{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
+.pill-badge{font-size:11px;font-weight:900;padding:6px 10px;border-radius:999px;background:#eef4ff;color:#3754c7;border:1px solid #dbe6ff}
+.plan h3{margin:0;font-size:14px}
+.prow{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px dashed #e6edf8}.prow:last-child{border-bottom:0}
+.prow span{color:var(--muted);font-size:14px}.prow strong{font-size:18px}
+.notice{margin-top:12px;border-radius:18px;padding:14px 16px;background:#f8fbff;border:1px solid var(--stroke);color:#3e5572}
+.iconbox{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;font-size:22px;margin-bottom:12px;background:linear-gradient(135deg,#eef4ff,#f7f1ff);border:1px solid #dbe6ff;color:#3754c7}
+.pay b,.extra b,.service b{display:block;margin-bottom:6px;font-size:15px} .pay p,.extra p,.service p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.service{min-height:132px}
+.logo-chip{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;padding:0 12px;border-radius:14px;font-weight:900;font-size:15px;color:#fff;margin-bottom:12px}
+.brand-netflix{background:#e50914}.brand-disney{background:#113ccf}.brand-max{background:#5b2cff}.brand-prime{background:#00a8e1}.brand-sky{background:#662dff}.brand-apple{background:#111}.brand-spotify{background:#1db954}.brand-ytp{background:#ff0000}.brand-ytm{background:#ff3d00}.brand-amusic{background:#fa243c}.brand-deezer{background:linear-gradient(135deg,#ff6b00,#ff00a8,#00c4ff)}.brand-xbox{background:#107c10}.brand-ps{background:#00439c}.brand-switch{background:#e60012}.brand-ea{background:#ff4d4d}.brand-gone{background:#4285f4}.brand-chatgpt{background:#10a37f}.brand-mid{background:#1b1f3b}.brand-canva{background:#00c4cc}
+.price-upit{margin-top:10px;display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;background:#f3f7ff;color:#3653c6;border:1px solid #dbe6ff;font-size:12px;font-weight:900}
+.cta-band{margin-top:18px;border-radius:26px;padding:22px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 20px 40px rgba(92,124,255,.28)}
+.cta-in{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.cta-band h3{margin:0 0 6px;font-size:25px}.cta-band p{margin:0;color:rgba(255,255,255,.88)}
+.footer{margin-top:18px;padding:18px;border-radius:20px;background:#fff;border:1px solid var(--stroke);color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+@media (max-width:1080px){.hero{grid-template-columns:1fr}.plans{grid-template-columns:repeat(2,1fr)}.pay-grid{grid-template-columns:repeat(2,1fr)}.extras{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:740px){.wrap{padding:10px 10px 40px}.navin{flex-direction:column;align-items:flex-start}.navcta{width:100%;display:grid;grid-template-columns:1fr 1fr}.navcta .btn:last-child{grid-column:span 2}h1{font-size:36px;letter-spacing:-1px}.sub{font-size:15px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn:first-child{grid-column:span 2}.plans,.pay-grid,.extras,.services{grid-template-columns:1fr}.offer-grid{grid-template-columns:repeat(2,1fr)}.phone{width:94px;right:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <div class="navin">
+      <div class="brand">
+        <div class="logo-wrap"><img src="assets/tvplus-logo.png" style="width:48px;height:48px;object-fit:contain;"></div>
+        <div class="brandtext"><b>TV PLUS</b><span>Premium TV i digitalne pretplate</span></div>
+      </div>
+      <div class="navcta">
+        <a class="btn soft" href="mailto:tv.plus.podrska@gmail.com">Email</a>
+        <a class="btn soft" href="viber://chat?number=%2B38762661948">Viber</a>
+        <a class="btn primary" href="https://wa.me/38762661948" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="card"><div class="pad">
+      <div class="eyebrow">TV PLUS • Premium ponuda</div>
+      <h1>TV, streaming, muzika, gaming i AI pretplate na jednom mjestu.</h1>
+      <p class="sub">Uživaj u omiljenim TV kanalima, filmovima, serijama, muzici i premium digitalnim uslugama na jednom mjestu. Brzo aktiviranje, stabilna usluga i ponuda prilagođena svakom korisniku.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://wa.me/38762661948?text=Zdravo!%20Zanimaju%20me%20TV%20PLUS%20paketi%20i%20digitalne%20pretplate." target="_blank" rel="noopener">Pošalji upit</a>
+        <a class="btn" href="#pretplate">Pogledaj pretplate</a>
+      </div>
+      <div class="chips">
+        <div class="chip">Netflix • Spotify • YouTube Premium</div>
+        <div class="chip">HBO Max • Disney+ • Prime Video</div>
+        <div class="chip">Game Pass • PS Plus • Canva Pro • ChatGPT Plus</div>
+      </div>
+    </div></div>
+
+    <div class="card preview"><div class="pad">
+      <div class="stage">
+        <div class="screen-box"><div class="screen">
+          <div class="screen-top"><div class="micro">TV PLUS</div><div class="micro">Premium ponuda</div></div>
+          <div>
+            <div style="font-size:30px;font-weight:900;line-height:1.05;max-width:260px">Pretplate koje ljudi najviše traže</div>
+            <div style="margin-top:8px;color:rgba(255,255,255,.78);font-size:14px">Streaming, muzika, gaming, cloud i AI alati.</div>
+            <div class="offer-grid">
+              <div class="offer netflix">Netflix<small>Cijena na upit</small></div>
+              <div class="offer spotify">Spotify<small>Cijena na upit</small></div>
+              <div class="offer youtube">YouTube Premium<small>Cijena na upit</small></div>
+              <div class="offer max">HBO Max<small>Cijena na upit</small></div>
+              <div class="offer gamepass">Game Pass<small>Cijena na upit</small></div>
+              <div class="offer canva">Canva Pro<small>Cijena na upit</small></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="phone"><div class="phone-screen">
+          <div class="line w40"></div><div class="line w65"></div>
+          <div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div>
+          <div class="line w90"></div>
+        </div></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>TV PLUS paketi</h2><p>Osnovne cijene važe za uplatu u pošti ili banci</p></div>
+    <div class="plans">
+      <div class="plan"><div class="plan-top"><h3>1 UREĐAJ</h3><div class="pill-badge">Najčešće</div></div><div class="prow"><span>1 mjesec</span><strong>8 €</strong></div><div class="prow"><span>3 mjeseca</span><strong>18 €</strong></div><div class="prow"><span>6 mjeseci</span><strong>30 €</strong></div><div class="prow"><span>12 mjeseci</span><strong>50 €</strong></div></div>
+      <div class="plan"><div class="plan-top"><h3>2 UREĐAJA</h3><div class="pill-badge">Porodica</div></div><div class="prow"><span>1 mjesec</span><strong>13 €</strong></div><div class="prow"><span>3 mjeseca</span><strong>25 €</strong></div><div class="prow"><span>6 mjeseci</span><strong>43 €</strong></div><div class="prow"><span>12 mjeseci</span><strong>75 €</strong></div></div>
+      <div class="plan"><div class="plan-top"><h3>3 UREĐAJA</h3><div class="pill-badge">Balans</div></div><div class="prow"><span>1 mjesec</span><strong>15 €</strong></div><div class="prow"><span>3 mjeseca</span><strong>30 €</strong></div><div class="prow"><span>6 mjeseci</span><strong>55 €</strong></div><div class="prow"><span>12 mjeseci</span><strong>90 €</strong></div></div>
+      <div class="plan"><div class="plan-top"><h3>4 UREĐAJA</h3><div class="pill-badge">Više lokacija</div></div><div class="prow"><span>1 mjesec</span><strong>20 €</strong></div><div class="prow"><span>3 mjeseca</span><strong>40 €</strong></div><div class="prow"><span>6 mjeseci</span><strong>75 €</strong></div><div class="prow"><span>12 mjeseci</span><strong>125 €</strong></div></div>
+      <div class="plan"><div class="plan-top"><h3>5 UREĐAJA</h3><div class="pill-badge">Max</div></div><div class="prow"><span>1 mjesec</span><strong>25 €</strong></div><div class="prow"><span>3 mjeseca</span><strong>50 €</strong></div><div class="prow"><span>6 mjeseci</span><strong>90 €</strong></div><div class="prow"><span>12 mjeseci</span><strong>150 €</strong></div></div>
+    </div>
+    <div class="notice">Za pakete <b>1, 3 i 6 mjeseci</b> aplikacija se dodatno plaća <b>5 €</b>.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Načini plaćanja</h2><p>Pregledno i jasno</p></div>
+    <div class="pay-grid">
+      <div class="pay"><div class="iconbox">💳</div><b>Karticom</b><p>Na postojeće cijene ide <b>+5%</b>.</p></div>
+      <div class="pay"><div class="iconbox">🏦</div><b>Pošta / banka</b><p>Cijene prikazane u paketu važe za uplatu u pošti ili banci.</p></div>
+      <div class="pay"><div class="iconbox">⏱️</div><b>Aircash</b><p>Brzo i jednostavno plaćanje preko aplikacije.</p></div>
+      <div class="pay"><div class="iconbox">🎫</div><b>Xbon</b><p>Na postojeće cijene ide <b>+10%</b>.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Dodatne usluge</h2><p>Premium digitalne pretplate na jednom mjestu</p></div>
+    <div class="extras">
+      <div class="extra"><div class="iconbox">📺</div><b>TV PLUS paketi</b><p>Za 1 do 5 uređaja sa postojećim cjenovnikom.</p></div>
+      <div class="extra"><div class="iconbox">🎬</div><b>Streaming pretplate</b><p>Filmovi i serije za pojedinačne i porodične korisnike.</p></div>
+      <div class="extra"><div class="iconbox">🎵</div><b>Muzičke pretplate</b><p>Spotify, YouTube Music, Apple Music i slično.</p></div>
+      <div class="extra"><div class="iconbox">🎮</div><b>Gaming & AI</b><p>Game Pass, PS Plus, Canva Pro, ChatGPT Plus i druge usluge.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="pretplate">
+    <div class="section-head"><h2>Ponuda pretplata</h2><p>Najpopularnije digitalne pretplate</p></div>
+    <div class="services">
+      <div class="service"><img src="assets/netflix.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Netflix</b><p>Filmovi i serije.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/disney-plus.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Disney+</b><p>Filmovi, Marvel, Star Wars i porodični sadržaj.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/hbo-max.png" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>HBO Max</b><p>Serije, filmovi i premium sadržaj.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/prime-video.png" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Prime Video</b><p>Streaming filmova i serija.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/skyshowtime.png" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>SkyShowtime</b><p>Filmski i serijski sadržaj.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/apple-tv.png" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Apple TV+</b><p>Apple original serije i filmovi.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/spotify.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Spotify</b><p>Muzika i playliste bez reklama.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/youtube-premium.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>YouTube Premium</b><p>YouTube bez reklama i background playback.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/youtube-premium.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>YouTube Music</b><p>Muzika i playliste.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/apple-music.png" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Apple Music</b><p>Muzika i premium audio sadržaj.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/deezer.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Deezer</b><p>Muzička pretplata.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/xbox-gamepass.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Xbox Game Pass</b><p>Igre i cloud gaming.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/ps-plus.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>PlayStation Plus</b><p>Pretplata za PlayStation korisnike.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/ps-plus.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Nintendo Switch Online</b><p>Online gaming pretplata.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/ea-play.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>EA Play</b><p>Pretplata za EA igre.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/google-one.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Google One</b><p>Cloud pohrana i Google pogodnosti.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/chatgpt-plus.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>ChatGPT Plus</b><p>Napredni AI alat i brži pristup.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/midjourney.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Midjourney</b><p>AI generisanje slika.</p><div class="price-upit">Cijena na upit</div></div>
+      <div class="service"><img src="assets/canva-pro.jpg" style="width:48px;height:48px;object-fit:contain;margin-bottom:10px;"><b>Canva Pro</b><p>Dizajn, šabloni i premium alati.</p><div class="price-upit">Cijena na upit</div></div>
+    </div>
+    <div class="notice">Za sve dodatne pretplate i digitalne usluge cijena je <b>na upit</b>. Javi se porukom za dostupnost i ponudu.</div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-in">
+      <div>
+        <h3>Zatraži svoju pretplatu već danas</h3>
+        <p>Kontaktiraj nas putem WhatsApp-a, Vibera ili emaila i dobićeš sve informacije o TV PLUS paketima i digitalnim pretplatama.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" style="color:#12233b" href="mailto:tv.plus.podrska@gmail.com">Email</a>
+        <a class="btn" style="color:#12233b" href="viber://chat?number=%2B38762661948">Viber</a>
+        <a class="btn" style="background:#fff;border:0;color:#12233b" href="https://wa.me/38762661948?text=Zdravo!%20Zanimaju%20me%20TV%20PLUS%20pretplate%20i%20paketi." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div>© <span id="y"></span> TV PLUS • Premium digitalne pretplate</div>
+    <div>Stabilan IPTV servis • Podrška 24/7</div>
+  </div>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
